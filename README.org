@@ -2,20 +2,32 @@
 
 A Minimal or Maximal Emacs Config Framework.
 
-** Just  another emacs configure
+
+** Just  another startkit
 
 For beginners, configuring Emacs can be a challenging task. The reason lies in Emacs' high degree of customizability. This matter only begins to become clear after you have spent countless hours exploring. During this process, you start to focus on your genuine needs and come to believe that Emacs is not a panacea. Subsequently, you will quietly sit down and revisit your Emacs configuration file. This process might last a long time or be relatively short if you stand on the shoulders of the community. The community offers many ready-made starter kits that can quickly set you on your way. The minmax-emacs.d project is a simple Emacs configuration framework extracted from my commonly used setup. Like other startkits, its purpose is to help beginners get started quickly. What sets it apart is that it incorporates my personal experience and understanding.
 
-** TODO Is it for you
-:LOGBOOK:
-- State "TODO"       from              [2025-03-11 Tue 09:17]
-:END:
+** Is it for you
+
+Next, I will briefly describe the top-level design of this framework, and you can decide for yourself whether it meets your needs.
+
+The entire framework is divided into two layers, the core layer and the additional layer, like stars surrounding the moon.
+
+- Moon :: The core layer consists of configuration files related to essential needs and should strive to remain stable and concise. Specifically,
+
+  1. Use the Customization Interface to manage built-in options.
+  2. Try to use the built-in functionalities provided by Emacs as much as possible.
+  3. This part should be concise and portable across multiple platforms.
+
+- Stars :: The additional layer includes many independent third-party packages. Each file represents an atomic feature, typically containing the configuration for a single package, but it can also include multiple highly cohesive packages.
+
+This "Moon + Stars" design can provide your configuration with great flexibility and stability.
 
 
 * Acknowledges
 
 - [[https://github.com/doomemacs/doomemacs][Doom Emacs]]
 - [[https://github.com/syl20bnr/spacemacs][Spacemacs]]
-- [[https://github.com/seagle0128/.emacs.d][Centaur Emacs]]  
+- [[https://github.com/seagle0128/.emacs.d][Centaur Emacs]]
 - [[https://sr.ht/~ashton314/emacs-bedrock/][emacs-bedrock]]
 - [[https://github.com/jamescherti/minimal-emacs.d][minimal-emacs.d]]
