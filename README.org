@@ -9,9 +9,7 @@ For beginners, configuring Emacs can be a challenging task. The reason lies in E
 
 ** Is it for you
 
-Next, I will briefly describe the top-level design of this framework, and you can decide for yourself whether it meets your needs.
-
-The entire framework is divided into two layers, the core layer and the additional layer, like stars surrounding the moon.
+Next, I will briefly describe the top-level design of this framework, and you can decide for yourself whether it meets your needs. The entire framework is divided into two layers, the core layer and the additional layer, like stars surrounding the moon.
 
 - Moon :: The core layer consists of configuration files related to essential needs and should strive to remain stable and concise. Specifically,
 
@@ -21,14 +19,12 @@ The entire framework is divided into two layers, the core layer and the addition
 
 - Stars :: The additional layer includes many independent third-party packages. Each file represents an atomic feature, typically containing the configuration for a single package, but it can also include multiple highly cohesive packages.
 
-This "Moon + Stars" design can provide your configuration with great flexibility and stability.
+This "Moon + Stars" design can provide your configuration with great flexibility and stability. It isolates the volatile, error-prone, and non-platform-portable parts of the configuration in the additional layer. This way, you can avoid frustration caused by upgrade failures, difficulties in locating issues, and other problems. It is a compromise between minimal and maximal--*MinMax*.
 
 
 * Useage
 
-I recommend directly forking this project to your own repository and then cloning it locally. This way, you can modify it according to your actual needs, following the design principles and methods mentioned above.
-
-Of course, you can also directly clone this project.
+I recommend directly forking this project to your own repository and then cloning it locally. This way, you can modify it according to your actual needs, following the design principles and methods mentioned above. Of course, you can also directly clone this project.
 
 #+begin_src shell
   git clone git@github.com:xplutoy/minmax-emacs.d.git ~/.emacs.d
