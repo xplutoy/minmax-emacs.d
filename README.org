@@ -24,6 +24,21 @@ The entire framework is divided into two layers, the core layer and the addition
 This "Moon + Stars" design can provide your configuration with great flexibility and stability.
 
 
+* Useage
+
+I recommend directly forking this project to your own repository and then cloning it locally. This way, you can modify it according to your actual needs, following the design principles and methods mentioned above.
+
+Of course, you can also directly clone this project.
+
+#+begin_src shell
+  git clone git@github.com:xplutoy/minmax-emacs.d.git ~/.emacs.d
+#+end_src
+
+Then, you can customize it in the following ways:
+
+- Rename =user-config.example= to =user-config.el=. Then, add the feature from the addtional layer or your own local customizations to it.
+- Add other features to the additional layer according to the atomic principle.
+
 * Acknowledges
 
 - [[https://github.com/doomemacs/doomemacs][Doom Emacs]]
